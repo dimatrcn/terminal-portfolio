@@ -51,8 +51,8 @@ export default function ContactBlock() {
         {email}
       </a>
 
-      <p className="mt-2 text-sm text-gray-400">Drop me a line about your project.</p>
-      <p className="mt-1 text-xs text-gray-500">Replies within 24h • UTC+2</p>
+      <p className="mt-2 text-sm text-gray-400">Scrie-mi despre proiectul tău.</p>
+      <p className="mt-1 text-xs text-gray-500">Răspuns în 24h • UTC+2</p>
 
       <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
         {/* Primary */}
@@ -61,7 +61,7 @@ export default function ContactBlock() {
           className="inline-flex items-center gap-2 rounded-lg border border-emerald-500/40 bg-emerald-500/15 px-4 py-2 text-sm font-medium text-emerald-200 hover:bg-emerald-500/25 hover:scale-105 hover:shadow-[0_0_15px_rgba(16,185,129,0.25)] transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/60"
         >
           <Mail className="h-4 w-4 transition-transform duration-300 group-hover:rotate-6" />
-          Email me
+          Trimite-mi email
         </a>
 
         {/* Secondary (swap with Calendly link if you have one) */}
@@ -70,7 +70,7 @@ export default function ContactBlock() {
           target="_blank" rel="noreferrer"
           className="inline-flex items-center gap-2 rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-sm text-gray-200 hover:bg-white/10 hover:scale-105 hover:border-white/20 transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/60"
         >
-          Book a call
+          Programează un apel
         </a>
 
         {/* Copy email */}
@@ -80,7 +80,7 @@ export default function ContactBlock() {
           aria-live="polite"
         >
           {copied ? <Check className="h-4 w-4 text-emerald-400 animate-pulse" /> : <Copy className="h-4 w-4" />}
-          {copied ? "Copied" : "Copy"}
+          {copied ? "Copiat" : "Copiază"}
         </button>
       </div>
 

@@ -16,13 +16,13 @@ export default function Header() {
           <span className="font-mono text-sm tracking-wide">dima@portfolio:~$</span>
         </button>
         <nav className="hidden gap-6 md:flex">
-          <a href="#about" className="link-underline text-sm text-gray-300 hover:text-white">About</a>
-          <a href="#projects" className="link-underline text-sm text-gray-300 hover:text-white">Projects</a>
+          <a href="#about" className="link-underline text-sm text-gray-300 hover:text-white">Despre</a>
+          <a href="#projects" className="link-underline text-sm text-gray-300 hover:text-white">Proiecte</a>
           <a href="#contact" className="link-underline text-sm text-gray-300 hover:text-white">Contact</a>
         </nav>
         <button onClick={() => setOpen(true)}
           className="inline-flex items-center gap-2 rounded-lg border border-white/10 bg-white/5 px-3 py-1.5 text-sm text-gray-200 hover:bg-white/10">
-          <Command className="h-4 w-4" /><span className="hidden sm:inline">Command</span>
+          <Command className="h-4 w-4" /><span className="hidden sm:inline">Comandă</span>
           <kbd className="ml-1 hidden rounded bg-black/60 px-1.5 py-0.5 text-xs text-gray-400 sm:inline">⌘K</kbd>
         </button>
       </div>

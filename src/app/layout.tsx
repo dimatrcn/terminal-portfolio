@@ -10,12 +10,12 @@ const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" });
 
 export const metadata: Metadata = {
   title: "Dima | Portfolio",
-  description: "Personal portfolio landing page with a clean terminal vibe.",
+  description: "Pagina personală de portfolio cu un vibe terminal curat.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="ro" suppressHydrationWarning>
       <body className={`${inter.className} ${mono.variable}`}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
           <ProgressBar />

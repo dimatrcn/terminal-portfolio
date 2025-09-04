@@ -8,9 +8,9 @@ function scrollToId(id: string) {
 
 export default function CommandPalette({ open, setOpen }: { open: boolean; setOpen: (v: boolean) => void }) {
   const actions = useMemo(() => [
-    { id: "about", label: "Go to About", run: () => scrollToId("about") },
-    { id: "projects", label: "Go to Projects", run: () => scrollToId("projects") },
-    { id: "contact", label: "Go to Contact", run: () => scrollToId("contact") },
+    { id: "about", label: "Mergi la Despre", run: () => scrollToId("about") },
+    { id: "projects", label: "Mergi la Proiecte", run: () => scrollToId("projects") },
+    { id: "contact", label: "Mergi la Contact", run: () => scrollToId("contact") },
   ], []);
   const [query, setQuery] = useState("");
   const filtered = actions.filter(a => a.label.toLowerCase().includes(query.toLowerCase()));
@@ -30,14 +30,14 @@ export default function CommandPalette({ open, setOpen }: { open: boolean; setOp
       <div className="mx-auto w-full max-w-xl overflow-hidden rounded-xl border border-white/10 bg-black/90 shadow-[0_0_60px_rgba(16,185,129,0.2)]">
         <div className="flex items-center gap-2 border-b border-white/10 px-3 py-2">
           <Command className="h-4 w-4 text-emerald-400" />
-          <input autoFocus placeholder="Type a command…" className="w-full bg-transparent py-2 text-sm text-white placeholder:text-gray-500 focus:outline-none"
+          <input autoFocus placeholder="Scrie o comandă…" className="w-full bg-transparent py-2 text-sm text-white placeholder:text-gray-500 focus:outline-none"
                  value={query} onChange={(e) => setQuery(e.target.value)} />
-          <button className="text-gray-400 hover:text-white" onClick={() => setOpen(false)} aria-label="Close">
+          <button className="text-gray-400 hover:text-white" onClick={() => setOpen(false)} aria-label="Închide">
             <X className="h-5 w-5" />
           </button>
         </div>
         <ul className="max-h-80 overflow-auto p-2">
-          {filtered.length === 0 && <li className="px-3 py-2 text-sm text-gray-500">No results</li>}
+          {filtered.length === 0 && <li className="px-3 py-2 text-sm text-gray-500">Fără rezultate</li>}
           {filtered.map(a => (
             <li key={a.id}>
               <button className="group flex w-full items-center justify-between rounded-lg px-3 py-2 text-left text-sm text-gray-200 hover:bg-white/5"
