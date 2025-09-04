@@ -69,7 +69,7 @@ export default function HeroTerminal() {
                 <a href="https://github.com/dimatrcn" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-lg border border-white/10 bg-white/0 px-4 py-2 text-sm text-gray-300 hover:bg-white/5">
                   <Github className="h-4 w-4" /> GitHub <ExternalLink className="h-4 w-4" />
                 </a>
-                <a href="https://www.linkedin.com/in/dumitru-turcan-02173a262" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-lg border border-white/10 bg-white/0 px-4 py-2 text-sm text-gray-300 hover:bg-white/5">
+                <a href="https://www.linkedin.com/in/țurcan-dumitru-02173a262" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-lg border border-white/10 bg-white/0 px-4 py-2 text-sm text-gray-300 hover:bg-white/5">
                   <Linkedin className="h-4 w-4" /> LinkedIn <ExternalLink className="h-4 w-4" />
                 </a>
               </div>

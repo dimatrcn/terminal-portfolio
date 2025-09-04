@@ -86,7 +86,7 @@ export default function ContactBlock() {
 
       <div className="mt-5 flex items-center justify-center gap-3 text-sm">
         <a
-          href="https://www.linkedin.com/in/dumitru-turcan-02173a262"
+          href="https://www.linkedin.com/in/țurcan-dumitru-02173a262"
           target="_blank" rel="noreferrer"
           className="inline-flex items-center gap-2 rounded-md border border-white/10 bg-white/0 px-3 py-1.5 text-gray-300 hover:bg-white/5 hover:text-white hover:scale-105 hover:border-white/20 transition-all duration-300"
         >
